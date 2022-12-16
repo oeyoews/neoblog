@@ -6,7 +6,7 @@ export default siteConfig({
   // right top button (optional)
   showGithubRibbon: true,
   // shared button (optional)
-  repoLink: 'oeyoews/nextjs-notion-starter-kit',
+  repoLink: 'oeyoews', // how to set null
 
   // the site's root Notion page (required)
   rootNotionPageId: '2e6d4459ab59423591394e8a6a72ce35',
