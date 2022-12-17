@@ -9,7 +9,7 @@ import { getCanonicalPageId } from './get-canonical-page-id'
 import { notion } from './notion-api'
 
 const uuid = !!includeNotionIdInUrls
-const cache = new ExpiryMap(10000)
+const cache = new ExpiryMap(5000)
 
 export async function getSiteMap(): Promise<types.SiteMap> {
   const partialSiteMap = await getAllPages(
