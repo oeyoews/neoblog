@@ -9,7 +9,9 @@ export default siteConfig({
   repoLink: 'oeyoews',
 
   // the site's root Notion page (required)
-  rootNotionPageId: '2e6d4459ab59423591394e8a6a72ce35',
+  // rootNotionPageId: '2e6d4459ab59423591394e8a6a72ce35',
+  // blog posts
+  rootNotionPageId: '91bb71ef8c454bb08b7dcd2e895eb973',
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
