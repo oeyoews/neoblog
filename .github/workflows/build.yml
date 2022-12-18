@@ -24,4 +24,4 @@ jobs:
         #          REDIS_HOST: ${{ secrets.REDIS_HOST }}
         #          REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
         run: |
-          yarn build && curl https:/oeyoewl.top > /dev/null
+          yarn build
