@@ -101,14 +101,13 @@ const Tweet = ({ id }: { id: string }) => {
   return <TweetEmbed tweetId={id} />
 }
 
+// last edit time
 const propertyLastEditedTimeValue = (
   { block, pageHeader },
   defaultFn: () => React.ReactNode
 ) => {
   if (pageHeader && block?.last_edited_time) {
-    return `Last updated ${formatDate(block?.last_edited_time, {
-      month: 'long'
-    })}`
+    return ` ${formatDate(block?.last_edited_time, { month: 'long' })}`
   }
 
   return defaultFn()
@@ -124,7 +123,8 @@ const propertyDateValue = (
     if (publishDate) {
       return `${formatDate(publishDate, {
         month: 'long'
-      })}`
+      })
+        } `
     }
   }
 
@@ -233,8 +233,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const socialImage = mapImageUrl(
     getPageProperty<string>('Social Image', block, recordMap) ||
-      (block as PageBlock).format?.page_cover ||
-      config.defaultPageCover,
+    (block as PageBlock).format?.page_cover ||
+    config.defaultPageCover,
     block
   )
 
