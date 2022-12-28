@@ -15,12 +15,12 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
+  name: 'Personal Notion Pages',
   domain: 'oeyoewl.top', // ?? dont use custom domain, use vercel
   author: 'oeyoews',
 
   // open graph metadata (optional)
-  description: 'Next.js Notion Starter Kit Site',
+  description: 'Personal Notion Pages',
 
   // social usernames (optional)
   notion: 'oeyoews',
