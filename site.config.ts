@@ -1,12 +1,14 @@
 import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
+  utterancesGitHubRepo: "oeyoews/comments",
+  utterancesGitHubLabel: null,
   // WIP
   showPageAsideSocials: false, // https://github.com/frankcbliu/awesome-nextjs-notion-blog/blob/main/components/NotionPage.tsx
   // right top button (optional)
   showGithubRibbon: true,
   // shared button (optional)
-  repoLink: 'oeyoews',
+  repoLink: null,
 
   // the site's root Notion page (required)
   rootNotionPageId: '2e6d4459ab59423591394e8a6a72ce35',

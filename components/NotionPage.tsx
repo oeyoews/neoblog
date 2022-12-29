@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { ReactionBarSelector } from '@charkour/react-reactions'
-
+import { ReactUtterances } from './ReactUtterances'
 
 import cs from 'classnames'
 import { PageBlock } from 'notion-types'
@@ -73,7 +73,6 @@ const Code = dynamic(() =>
     return m.Code
   })
 )
-
 
 const Collection = dynamic(() =>
   import('react-notion-x/build/third-party/collection').then(
@@ -207,15 +206,21 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const footer = React.useMemo(() => <Footer />, [])
 
   if (isBlogPost) {
-   customPageFooter=  <div style={{}}>
+    customPageFooter = <div style={{}}>
       <ReactionBarSelector iconSize={22} />
+      <ReactUtterances
+        repo={config.utterancesGitHubRepo}
+        label={config.utterancesGitHubLabel}
+        issueMap='issue-term'
+        issueTerm='title'
+        theme={isDarkMode ? 'photon-dark' : 'github-light'}
+      />
     </div>
   }
 
   if (router.isFallback) {
     return <Loading />
   }
-
 
   if (error || !site || !block) {
     return <Page404 site={site} pageId={pageId} error={error} />
@@ -252,7 +257,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const socialDescription =
     getPageProperty<string>('Description', block, recordMap) ||
     config.description
-
 
   return (
     <>

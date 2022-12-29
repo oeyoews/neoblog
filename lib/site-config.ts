@@ -1,6 +1,8 @@
 import * as types from './types'
 
 export interface SiteConfig {
+  utterancesGitHubLabel?: string
+  utterancesGitHubRepo?: string
   showPageAsideSocials?: boolean
   showGithubRibbon?: boolean
   repoLink?: string
