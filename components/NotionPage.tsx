@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { ReactionBarSelector } from '@charkour/react-reactions'
+// import { ReactionBarSelector } from '@charkour/react-reactions'
 import cs from 'classnames'
 import { PageBlock } from 'notion-types'
 import { formatDate, getBlockTitle, getPageProperty } from 'notion-utils'
