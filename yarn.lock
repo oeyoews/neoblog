@@ -235,11 +235,6 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@charkour/react-reactions@^0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@charkour/react-reactions/-/react-reactions-0.11.0.tgz#cde3614de5a954ee733c0d8c855be473ad003e7c"
-  integrity sha512-a1AnfUzZ1jZZUvMI8w4D8EfwMohByKhW6RTnY4xQ1VFwNfYbcVbRT6MUO7Gkk9Q+LqyVsNNW9fU9rG58hOvGmg==
-
 "@eslint/eslintrc@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-1.4.0.tgz#8ec64e0df3e7a1971ee1ff5158da87389f167a63"
@@ -1295,11 +1290,6 @@ electron-to-chromium@^1.4.251:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.284.tgz#61046d1e4cab3a25238f6bf7413795270f125592"
   integrity sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==
 
-emoji-as-array@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/emoji-as-array/-/emoji-as-array-1.0.0.tgz#c475fb20af5771900729439407546a3ad9fd6fee"
-  integrity sha512-5sFKwKwKfzVBmqB8LzpxiScv/lcOeMbo8TsPAQhlMTBQfytxv47cDzhnga7fekdxQ1X2NuvXY7tijr7YTqn3DQ==
-
 emoji-regex@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-8.0.0.tgz#e818fd69ce5ccfcb404594f842963bf53164cc37"
@@ -2323,7 +2313,7 @@ lodash.merge@^4.6.2:
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
-lodash@4.17.21, lodash@^4.0.1, lodash@^4.15.0, lodash@^4.17.20:
+lodash@4.17.21, lodash@^4.17.20:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -3133,15 +3123,6 @@ react-pdf@^5.7.1:
     tiny-invariant "^1.0.0"
     tiny-warning "^1.0.0"
 
-react-reactions@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/react-reactions/-/react-reactions-0.1.3.tgz#b33b970930097b39b1b6d4b83a2944e962d7a318"
-  integrity sha512-7IVKmT+HwShC4JFwVZAk3wOM0Oq2LFfZBXaGw/wBb6jIV3EDYrFWsyK665/FcT2oaV8KF8U6/X7+Hib5ZYaiww==
-  dependencies:
-    emoji-as-array "^1.0.0"
-    lodash "^4.15.0"
-    reactcss "^1.0.6"
-
 "react-side-effect@^1.1.0 || ^2.1.0":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.2.tgz#dc6345b9e8f9906dc2eeb68700b615e0b4fe752a"
@@ -3183,13 +3164,6 @@ react@^18.2.0:
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
   dependencies:
     loose-envify "^1.1.0"
-
-reactcss@^1.0.6:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/reactcss/-/reactcss-1.2.3.tgz#c00013875e557b1cf0dfd9a368a1c3dab3b548dd"
-  integrity sha512-KiwVUcFu1RErkI97ywr8nvx8dNOpT03rbnma0SSalTYjkrPYaEajR4a/MRt6DZ46K6arDRbWMNHF+xH7G7n/8A==
-  dependencies:
-    lodash "^4.0.1"
 
 read-pkg@^3.0.0:
   version "3.0.0"

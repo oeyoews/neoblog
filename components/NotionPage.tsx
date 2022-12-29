@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-// import { ReactionBarSelector } from '@charkour/react-reactions'
 import cs from 'classnames'
 import { PageBlock } from 'notion-types'
 import { formatDate, getBlockTitle, getPageProperty } from 'notion-utils'
@@ -27,7 +26,6 @@ import { NotionPageHeader } from './NotionPageHeader'
 import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
-// import { ReactUtterances } from './ReactUtterances'
 import styles from './styles.module.css'
 
 // -----------------------------------------------------------------------------
@@ -203,28 +201,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const footer = React.useMemo(() => <Footer />, [])
 
-  /*{' '}
-<ReactUtterances
-repo={config.utterancesGitHubRepo}
-label={config.utterancesGitHubLabel}
-issueMap='issue-term'
-issueTerm='title'
-theme={isDarkMode ? 'photon-dark' : 'github-light'}
-/>{' '}
-*/
-
-  // let customPageFooter: React.ReactNode = null
-  // if (isBlogPost) {
-  //   // add option config  for emoji
-  //   customPageFooter = (
-  //     <div>
-  //       <div>
-  //         <ReactionBarSelector iconSize={22} />
-  //       </div>
-  //     </div>
-  //   )
-  // }
-
   if (router.isFallback) {
     return <Loading />
   }
@@ -300,7 +276,6 @@ theme={isDarkMode ? 'photon-dark' : 'github-light'}
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside} // WIP
         footer={footer}
-        // pageFooter={customPageFooter}
       />
       {config.showGithubRibbon && <GitHubShareButton />}
     </>
