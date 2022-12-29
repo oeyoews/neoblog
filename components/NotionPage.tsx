@@ -205,7 +205,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const footer = React.useMemo(() => <Footer />, [])
 
-  if (isBlogPost && config.utterancesGitHubRepo) {
+  if (isBlogPost) {
     // add option config  for emoji
     customPageFooter = (
       <>

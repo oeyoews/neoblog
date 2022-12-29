@@ -1,7 +1,7 @@
 import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
-  // utterancesGitHubRepo: 'oeyoews/comments',
+  utterancesGitHubRepo: null,
   utterancesGitHubLabel: null,
   // WIP
   showPageAsideSocials: false, // https://github.com/frankcbliu/awesome-nextjs-notion-blog/blob/main/components/NotionPage.tsx
