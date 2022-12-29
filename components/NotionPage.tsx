@@ -205,6 +205,15 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const footer = React.useMemo(() => <Footer />, [])
 
+  /*{' '}
+<ReactUtterances
+repo={config.utterancesGitHubRepo}
+label={config.utterancesGitHubLabel}
+issueMap='issue-term'
+issueTerm='title'
+theme={isDarkMode ? 'photon-dark' : 'github-light'}
+/>{' '}
+*/
   if (isBlogPost) {
     // add option config  for emoji
     customPageFooter = (
@@ -213,15 +222,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
           <div>
             <ReactionBarSelector iconSize={22} />
           </div>
-          /*{' '}
-          <ReactUtterances
-            repo={config.utterancesGitHubRepo}
-            label={config.utterancesGitHubLabel}
-            issueMap='issue-term'
-            issueTerm='title'
-            theme={isDarkMode ? 'photon-dark' : 'github-light'}
-          />{' '}
-          */
         </div>
       </>
     )
