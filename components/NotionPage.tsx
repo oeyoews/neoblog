@@ -253,8 +253,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
     getPageProperty<string>('Description', block, recordMap) ||
     config.description
 
-    if (isBlogPost) {
-      }
 
   return (
     <>
