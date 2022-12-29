@@ -3,9 +3,8 @@ import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { ReactionBarSelector } from '@charkour/react-reactions'
-import { ReactUtterances } from './ReactUtterances'
 
+import { ReactionBarSelector } from '@charkour/react-reactions'
 import cs from 'classnames'
 import { PageBlock } from 'notion-types'
 import { formatDate, getBlockTitle, getPageProperty } from 'notion-utils'
@@ -28,6 +27,7 @@ import { NotionPageHeader } from './NotionPageHeader'
 import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
+import { ReactUtterances } from './ReactUtterances'
 import styles from './styles.module.css'
 
 // -----------------------------------------------------------------------------
@@ -205,17 +205,24 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const footer = React.useMemo(() => <Footer />, [])
 
-  if (isBlogPost) {
-    customPageFooter = <div style={{}}>
-      <ReactionBarSelector iconSize={22} />
-      <ReactUtterances
-        repo={config.utterancesGitHubRepo}
-        label={config.utterancesGitHubLabel}
-        issueMap='issue-term'
-        issueTerm='title'
-        theme={isDarkMode ? 'photon-dark' : 'github-light'}
-      />
-    </div>
+  if (isBlogPost && config.utterancesGitHubRepo) {
+    // add option config  for emoji
+    customPageFooter = (
+      <>
+        <div>
+          <div>
+            <ReactionBarSelector iconSize={22} />
+          </div>
+          <ReactUtterances
+            repo={config.utterancesGitHubRepo}
+            label={config.utterancesGitHubLabel}
+            issueMap='issue-term'
+            issueTerm='title'
+            theme={isDarkMode ? 'photon-dark' : 'github-light'}
+          />
+        </div>
+      </>
+    )
   }
 
   if (router.isFallback) {
@@ -249,8 +256,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const socialImage = mapImageUrl(
     getPageProperty<string>('Social Image', block, recordMap) ||
-    (block as PageBlock).format?.page_cover ||
-    config.defaultPageCover,
+      (block as PageBlock).format?.page_cover ||
+      config.defaultPageCover,
     block
   )
 
