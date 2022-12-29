@@ -217,13 +217,11 @@ theme={isDarkMode ? 'photon-dark' : 'github-light'}
   if (isBlogPost) {
     // add option config  for emoji
     customPageFooter = (
-      <>
+      <div>
         <div>
-          <div>
-            <ReactionBarSelector iconSize={22} />
-          </div>
+          <ReactionBarSelector iconSize={22} />
         </div>
-      </>
+      </div>
     )
   }
 
