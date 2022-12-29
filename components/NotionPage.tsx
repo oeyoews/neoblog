@@ -103,8 +103,6 @@ const Tweet = ({ id }: { id: string }) => {
   return <TweetEmbed tweetId={id} />
 }
 
-let customPageFooter: React.ReactNode = null
-
 // last edit time
 const propertyLastEditedTimeValue = (
   { block, pageHeader },
@@ -214,16 +212,18 @@ issueTerm='title'
 theme={isDarkMode ? 'photon-dark' : 'github-light'}
 />{' '}
 */
-  if (isBlogPost) {
-    // add option config  for emoji
-    customPageFooter = (
-      <div>
-        <div>
-          <ReactionBarSelector iconSize={22} />
-        </div>
-      </div>
-    )
-  }
+
+  // let customPageFooter: React.ReactNode = null
+  // if (isBlogPost) {
+  //   // add option config  for emoji
+  //   customPageFooter = (
+  //     <div>
+  //       <div>
+  //         <ReactionBarSelector iconSize={22} />
+  //       </div>
+  //     </div>
+  //   )
+  // }
 
   if (router.isFallback) {
     return <Loading />
