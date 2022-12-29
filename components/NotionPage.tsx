@@ -300,7 +300,7 @@ theme={isDarkMode ? 'photon-dark' : 'github-light'}
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside} // WIP
         footer={footer}
-        pageFooter={customPageFooter}
+        // pageFooter={customPageFooter}
       />
       {config.showGithubRibbon && <GitHubShareButton />}
     </>
