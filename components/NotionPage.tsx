@@ -3,6 +3,8 @@ import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { ReactionBarSelector } from '@charkour/react-reactions'
+
 
 import cs from 'classnames'
 import { PageBlock } from 'notion-types'
@@ -72,6 +74,7 @@ const Code = dynamic(() =>
   })
 )
 
+
 const Collection = dynamic(() =>
   import('react-notion-x/build/third-party/collection').then(
     (m) => m.Collection
@@ -101,6 +104,8 @@ const Tweet = ({ id }: { id: string }) => {
   return <TweetEmbed tweetId={id} />
 }
 
+let customPageFooter: React.ReactNode = null
+
 // last edit time
 const propertyLastEditedTimeValue = (
   { block, pageHeader },
@@ -123,8 +128,7 @@ const propertyDateValue = (
     if (publishDate) {
       return `${formatDate(publishDate, {
         month: 'long'
-      })
-        } `
+      })} `
     }
   }
 
@@ -202,9 +206,16 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const footer = React.useMemo(() => <Footer />, [])
 
+  if (isBlogPost) {
+   customPageFooter=  <div style={{}}>
+      <ReactionBarSelector iconSize={22} />
+    </div>
+  }
+
   if (router.isFallback) {
     return <Loading />
   }
+
 
   if (error || !site || !block) {
     return <Page404 site={site} pageId={pageId} error={error} />
@@ -242,6 +253,9 @@ export const NotionPage: React.FC<types.PageProps> = ({
     getPageProperty<string>('Description', block, recordMap) ||
     config.description
 
+    if (isBlogPost) {
+      }
+
   return (
     <>
       <PageHead
@@ -252,10 +266,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
         image={socialImage}
         url={canonicalPageUrl}
       />
-
       {isLiteMode && <BodyClassName className='notion-lite' />}
       {isDarkMode && <BodyClassName className='dark-mode' />}
-
       <NotionRenderer
         bodyClassName={cs(
           styles.notion,
@@ -279,6 +291,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside} // WIP
         footer={footer}
+        pageFooter={customPageFooter}
       />
       {config.showGithubRibbon && <GitHubShareButton />}
     </>

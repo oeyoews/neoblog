@@ -24,6 +24,7 @@
     "test:prettier": "prettier '**/*.{js,jsx,ts,tsx}' --check"
   },
   "dependencies": {
+    "@charkour/react-reactions": "^0.11.0",
     "@fisch0920/use-dark-mode": "^2.4.0",
     "@keyvhq/core": "^1.6.9",
     "@keyvhq/redis": "^1.6.10",
@@ -47,6 +48,7 @@
     "react-body-classname": "^1.3.1",
     "react-dom": "^18.2.0",
     "react-notion-x": "^6.15.6",
+    "react-reactions": "^0.1.3",
     "react-tweet-embed": "^2.0.0",
     "react-use": "^17.3.2",
     "rss": "^1.2.2"
