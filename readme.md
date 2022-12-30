@@ -2,9 +2,10 @@
 
 ## TODO
 
-- [ ] translate readme
-- [ ] add switch theme during effect
-- [ ] left sidebar
+- [ ] use hitokoto https://developer.hitokoto.cn/sentence/demo/#%E7%BD%91%E9%A1%B5
+- [x] translate readme
+- [x] add switch theme during effect
+- [x] left sidebar
 
 ![showcase 1](./images/notion-1.png 'notion-1')
 
