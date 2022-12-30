@@ -26,12 +26,19 @@ import { NotionPageHeader } from './NotionPageHeader'
 import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
-import { ReactUtterances } from './Utterances'
+// import { ReactUtterances } from './Utterances'
 import styles from './styles.module.css'
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
 // -----------------------------------------------------------------------------
+
+const Twikoo = dynamic(
+  () => {
+    return import('./Twikoo')
+  },
+  { ssr: false }
+)
 
 const Code = dynamic(() =>
   import('react-notion-x/build/third-party/code').then(async (m) => {
@@ -193,13 +200,17 @@ export const NotionPage: React.FC<types.PageProps> = ({
   let comments = null
   // NOTE: dont add div for comments
   if (isBlogPost) {
+    // fragment <> </>
     comments = (
-      <ReactUtterances
-        repo='oeyoews/comments' // WIP to convert option
-        issueMap='issue-term'
-        issueTerm='title'
-        theme={isDarkMode ? 'photon-dark' : 'github-light'}
-      />
+      // <ReactUtterances
+      //   repo='oeyoews/comments' // WIP to convert option
+      //   issueMap='issue-term'
+      //   issueTerm='title'
+      //   theme={isDarkMode ? 'photon-dark' : 'github-light'}
+      // />
+      <>
+        <Twikoo />
+      </>
     )
   }
   const showTableOfContents = !!isBlogPost
