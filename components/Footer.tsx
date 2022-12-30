@@ -148,7 +148,7 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
       </div>
-      <div>
+      <div className={styles.hitokoto}>
         <Hitokoto />
       </div>
     </footer>

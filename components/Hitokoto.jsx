@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 
+import styles from './styles.module.css'
+
 const Hitokoto = () => {
   useEffect(() => {
     const script = document.createElement('script')
@@ -15,11 +17,7 @@ const Hitokoto = () => {
       anchor.innerHTML = ''
     }
   })
-  return (
-    <div id='hitokoto' className='hitokoto'>
-      Hello
-    </div>
-  )
+  return <div id='hitokoto'>Loading ...</div>
 }
 
 export default Hitokoto
