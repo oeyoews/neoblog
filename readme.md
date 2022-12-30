@@ -2,7 +2,7 @@
 
 ## TODO
 
-- [ ] use hitokoto https://developer.hitokoto.cn/sentence/demo/#%E7%BD%91%E9%A1%B5
+- [x] use hitokoto https://developer.hitokoto.cn/sentence/demo/#%E7%BD%91%E9%A1%B5
 - [x] translate readme
 - [x] add switch theme during effect
 - [x] left sidebar
@@ -13,4 +13,4 @@
 
 ## xxx
 
- format: https://github.com/frankcbliu/awesome-nextjs-notion-blog/commit/a431334cab4f7ab0e83eb51390b702bb91ec25c9
+format: https://github.com/frankcbliu/awesome-nextjs-notion-blog/commit/a431334cab4f7ab0e83eb51390b702bb91ec25c9
