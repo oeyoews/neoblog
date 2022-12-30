@@ -26,8 +26,8 @@ import { NotionPageHeader } from './NotionPageHeader'
 import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
-import styles from './styles.module.css'
 import { ReactUtterances } from './Utterances'
+import styles from './styles.module.css'
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
@@ -192,13 +192,16 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   let comments = null
   if (isBlogPost) {
-    comments =
-      <ReactUtterances
-        repo='oeyoews/comments'
-        issueMap='issue-term'
-        issueTerm='title'
-        theme={isDarkMode ? 'photon-dark' : 'github-light'}
-      />
+    comments = (
+      <div>
+        <ReactUtterances
+          repo='oeyoews/comments' // WIP to convert option
+          issueMap='issue-term'
+          issueTerm='title'
+          theme={isDarkMode ? 'photon-dark' : 'github-light'}
+        />
+      </div>
+    )
   }
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
@@ -243,8 +246,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const socialImage = mapImageUrl(
     getPageProperty<string>('Social Image', block, recordMap) ||
-    (block as PageBlock).format?.page_cover ||
-    config.defaultPageCover,
+      (block as PageBlock).format?.page_cover ||
+      config.defaultPageCover,
     block
   )
 
