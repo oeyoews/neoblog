@@ -191,16 +191,15 @@ export const NotionPage: React.FC<types.PageProps> = ({
     block?.type === 'page' && block?.parent_table === 'collection'
 
   let comments = null
+  // NOTE: dont add div for comments
   if (isBlogPost) {
     comments = (
-      <div>
-        <ReactUtterances
-          repo='oeyoews/comments' // WIP to convert option
-          issueMap='issue-term'
-          issueTerm='title'
-          theme={isDarkMode ? 'photon-dark' : 'github-light'}
-        />
-      </div>
+      <ReactUtterances
+        repo='oeyoews/comments' // WIP to convert option
+        issueMap='issue-term'
+        issueTerm='title'
+        theme={isDarkMode ? 'photon-dark' : 'github-light'}
+      />
     )
   }
   const showTableOfContents = !!isBlogPost
