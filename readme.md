@@ -2,6 +2,7 @@
 
 ## TODO
 
+- [ ] style ??? for utterances
 - [x] use hitokoto https://developer.hitokoto.cn/sentence/demo/#%E7%BD%91%E9%A1%B5
 - [x] translate readme
 - [x] add switch theme during effect

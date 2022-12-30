@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react'
 
-import styles from './styles.module.css'
-
 const Hitokoto = () => {
   useEffect(() => {
     const script = document.createElement('script')
