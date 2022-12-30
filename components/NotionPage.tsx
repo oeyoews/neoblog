@@ -27,6 +27,7 @@ import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
 import styles from './styles.module.css'
+import { ReactUtterances } from './Utterances'
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
@@ -189,6 +190,16 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const isBlogPost =
     block?.type === 'page' && block?.parent_table === 'collection'
 
+  let comments = null
+  if (isBlogPost) {
+    comments =
+      <ReactUtterances
+        repo='oeyoews/comments'
+        issueMap='issue-term'
+        issueTerm='title'
+        theme={isDarkMode ? 'photon-dark' : 'github-light'}
+      />
+  }
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
 
@@ -232,8 +243,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const socialImage = mapImageUrl(
     getPageProperty<string>('Social Image', block, recordMap) ||
-      (block as PageBlock).format?.page_cover ||
-      config.defaultPageCover,
+    (block as PageBlock).format?.page_cover ||
+    config.defaultPageCover,
     block
   )
 
@@ -275,6 +286,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         mapImageUrl={mapImageUrl}
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside} // WIP
+        pageFooter={comments}
         footer={footer}
       />
       {config.showGithubRibbon && <GitHubShareButton />}
