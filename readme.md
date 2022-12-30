@@ -2,9 +2,10 @@
 
 ## TODO
 
-- [ ] twikoo bug
+- [ ] subarticle will have some error on console
+- [x] twikoo bug
 - [ ] embed twm and confetti
-- [ ] style ??? for utterances
+- [x] style ??? for utterances
 - [x] use hitokoto https://developer.hitokoto.cn/sentence/demo/#%E7%BD%91%E9%A1%B5
 - [x] translate readme
 - [x] add switch theme during effect

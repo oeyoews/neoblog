@@ -13,7 +13,11 @@ const Twikoo = () => {
       // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
     })
   })
-  return <div id='twikoo'></div>
+  return (
+    <>
+      <div id='twikoo'></div>
+    </>
+  )
 }
 
 export default Twikoo
