@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-const Utterances = ({ issueTerm, layout }) => {
+const Utterances = ({ issueTerm }) => {
   useEffect(() => {
     // const theme =
     //   BLOG.APPEARANCE === 'auto'
