@@ -20,6 +20,7 @@ import 'styles/music.css'
 import 'styles/notion.css'
 // global style overrides for prism theme (optional)
 import 'styles/prism-theme.css'
+import 'styles/scrollbar.css'
 
 import { bootstrap } from '@/lib/bootstrap-client'
 import {
