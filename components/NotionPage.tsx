@@ -210,11 +210,14 @@ export const NotionPage: React.FC<types.PageProps> = ({
       // />
       // why use classnames
       // <div className={styles.ending} > 😀  Ending line </div>
+      // toc jump repeat effect for confetti
+      // add confit for confetti enable or not
       <>
-        <ConfettiComponent />
         <Twikoo />
       </>
     )
+  } else {
+    comments = <ConfettiComponent /> // have a bug: document is not defined
   }
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
