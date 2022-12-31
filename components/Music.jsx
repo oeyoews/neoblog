@@ -30,7 +30,7 @@ const Music = () => {
     <>
       <div id='twm'></div>
       <meting-js
-        id='2916766519'
+        id='2916766519' // wip to option
         server='netease'
         order='random'
         type='playlist'
