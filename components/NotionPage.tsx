@@ -208,6 +208,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
       //   issueTerm='title'
       //   theme={isDarkMode ? 'photon-dark' : 'github-light'}
       // />
+      // why use classnames
+      // <div className={styles.ending} > 😀  Ending line </div>
       <>
         <Twikoo />
       </>
@@ -256,8 +258,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const socialImage = mapImageUrl(
     getPageProperty<string>('Social Image', block, recordMap) ||
-      (block as PageBlock).format?.page_cover ||
-      config.defaultPageCover,
+    (block as PageBlock).format?.page_cover ||
+    config.defaultPageCover,
     block
   )
 
