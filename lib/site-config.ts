@@ -1,6 +1,9 @@
 import * as types from './types'
 
 export interface SiteConfig {
+  customHeaderLogo?: string | null
+  customHeaderLogoDark?: string | null
+
   utterancesGitHubLabel?: string
   utterancesGitHubRepo?: string
   showPageAsideSocials?: boolean

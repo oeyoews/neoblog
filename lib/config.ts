@@ -16,6 +16,15 @@ import {
   Site
 } from './types'
 
+export const customHeaderLogo: string | null = getSiteConfig(
+  'customHeaderLogo',
+  null
+)
+
+export const customHeaderLogoDark: string | null = getSiteConfig(
+  'customHeaderLogoDark',
+  null
+)
 export const showPageAsideSocials: boolean = getSiteConfig(
   'showPageAsideSocials',
   false
@@ -28,8 +37,14 @@ export const showGithubRibbon: boolean = getSiteConfig(
 // add repolink
 export const repoLink: string | null = getSiteConfig('repoLink', 'oeyoews')
 // comments
-export const utterancesGitHubRepo: string | null = getSiteConfig('utterancesGitHubRepo', null)
-export const utterancesGitHubLabel: string | null = getSiteConfig("utterancesGitHubLabel", null)
+export const utterancesGitHubRepo: string | null = getSiteConfig(
+  'utterancesGitHubRepo',
+  null
+)
+export const utterancesGitHubLabel: string | null = getSiteConfig(
+  'utterancesGitHubLabel',
+  null
+)
 
 export const rootNotionPageId: string = parsePageId(
   getSiteConfig('rootNotionPageId'),
@@ -179,8 +194,8 @@ export const site: Site = {
 export const fathomId = isDev ? null : process.env.NEXT_PUBLIC_FATHOM_ID
 export const fathomConfig = fathomId
   ? {
-    excludedDomains: ['localhost', 'localhost:3000']
-  }
+      excludedDomains: ['localhost', 'localhost:3000']
+    }
   : undefined
 
 export const posthogId = process.env.NEXT_PUBLIC_POSTHOG_ID

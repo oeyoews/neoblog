@@ -1,6 +1,11 @@
 import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
+  // Custom logo - this will replace the breadcrumbs - Feature requires navigationStyle: 'custom'
+  // customHeaderLogo:
+  //   'https://alexchaveriat.com/_next/image?url=https%3A%2F%2Falexchaveriat.com%2Flogo.png&w=128&q=75',
+  // customHeaderLogoDark:
+  //   'https://oeyoewl.top/_next/image?url=https%3A%2F%2Fwww.notion.so%2Fimage%2Fhttps%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252F1825f2f9-9aa1-4b9d-aca3-c3c9c70990bb%252Favatar-around.png%3Ftable%3Dblock%26id%3D2e6d4459-ab59-4235-9139-4e8a6a72ce35%26cache%3Dv2&w=2048&q=75', // optional
   // WIP
   showPageAsideSocials: false, // https://github.com/frankcbliu/awesome-nextjs-notion-blog/blob/main/components/NotionPage.tsx
   // right top button (optional)
