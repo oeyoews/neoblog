@@ -13,13 +13,13 @@ html {
 /* for Chrome, Edge */
 ::-webkit-scrollbar,
 scrollbar-width {
-  width: 5px;
+  width: 7px;
   height: 5px;
 }
 
 ::-webkit-scrollbar:hover,
 scrollbar-width {
-  width: 5.5px;
+  width: 7.5px;
 }
 
 ::-webkit-scrollbar-track {

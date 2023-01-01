@@ -2,7 +2,11 @@
 
 ## TODO
 
-- [ ] add post dir https://github.com/Yeraze/nextjs-notion-starter-kit/blob/main/pages/post/%5BpageId%5D.tsx
+- [ ] https://stackoverflow.com/questions/40987309/react-display-loading-screen-while-dom-is-rendering
+- [ ] use discuss comments
+- [ ] support short `ctrl + k` to support
+- [ ] support social author img
+- [ ] add post dir https://github.com/Yeraze/nextjs-notion-starter-kit/blob/main/pages/post/%5BpageId%5D.tsx [ ] https://github.com/Yeraze/nextjs-notion-starter-kit/pull/2/files
 - [x] subarticle will have some error on console
 - [x] twikoo bug
 - [x] embed twm and confetti
