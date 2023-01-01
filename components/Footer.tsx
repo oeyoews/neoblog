@@ -1,15 +1,15 @@
 import * as React from 'react'
 
-import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
-import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
-import { FaMastodon } from '@react-icons/all-files/fa/FaMastodon'
-import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
-import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
-import { FiGithub } from '@react-icons/all-files/fi/FiGithub'
-import { FiTwitter } from '@react-icons/all-files/fi/FiTwitter'
-import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
-import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
-import { SiNotion } from '@react-icons/all-files/si/SiNotion'
+import {
+  FaEnvelopeOpenText,
+  FaLinkedin,
+  FaMastodon,
+  FaYoutube,
+  FaZhihu
+} from 'react-icons/fa'
+import { FiGithub, FiTwitter } from 'react-icons/fi'
+import { IoMoonSharp, IoSunnySharp } from 'react-icons/io5'
+import { SiNotion } from 'react-icons/si'
 
 import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
@@ -53,7 +53,7 @@ export const FooterImpl: React.FC = () => {
               onClick={onToggleDarkMode}
               title='Toggle dark mode'
             >
-              {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
+              {isDarkMode ? <IoMoonSharp /> : <IoSunnySharp />}
             </a>
           )}
         </div>
