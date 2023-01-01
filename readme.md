@@ -2,6 +2,7 @@
 
 ## TODO
 
+- [ ] add post dir https://github.com/Yeraze/nextjs-notion-starter-kit/blob/main/pages/post/%5BpageId%5D.tsx
 - [x] subarticle will have some error on console
 - [x] twikoo bug
 - [x] embed twm and confetti

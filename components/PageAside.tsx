@@ -5,6 +5,7 @@ import { Block, ExtendedRecordMap } from 'notion-types'
 import { getPageTweet } from '@/lib/get-page-tweet'
 
 import { PageActions } from './PageActions'
+import { HomeButton } from './PageHomeButton'
 import { PageSocial } from './PageSocial'
 
 export const PageAside: React.FC<{
@@ -20,8 +21,14 @@ export const PageAside: React.FC<{
   if (isBlogPost) {
     const tweet = getPageTweet(block, recordMap)
     if (!tweet) {
-      return null
+      return <HomeButton />
     }
+    return (
+      <>
+        <PageActions tweet={tweet} />
+        <HomeButton />
+      </>
+    )
 
     return <PageActions tweet={tweet} />
   }
