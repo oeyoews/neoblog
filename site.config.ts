@@ -1,6 +1,7 @@
 import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
+  // playlist: '' // WIP
   // Custom logo - this will replace the breadcrumbs - Feature requires navigationStyle: 'custom'
   // customHeaderLogo:
   //   'https://alexchaveriat.com/_next/image?url=https%3A%2F%2Falexchaveriat.com%2Flogo.png&w=128&q=75',

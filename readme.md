@@ -2,6 +2,7 @@
 
 ## TODO
 
+- [ ] dynamic nextjs question
 - [ ] https://stackoverflow.com/questions/40987309/react-display-loading-screen-while-dom-is-rendering
 - [ ] use discuss comments
 - [ ] support short `ctrl + k` to support

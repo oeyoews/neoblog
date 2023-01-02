@@ -1,4 +1,5 @@
 import * as React from 'react'
+import dynamic from 'next/dynamic'
 
 import {
   FaEnvelopeOpenText,
@@ -14,8 +15,12 @@ import { SiNotion } from 'react-icons/si'
 import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
-// custom
-import Hitokoto from './Hitokoto'
+const Hitokoto = dynamic(
+  () => {
+    return import('./Hitokoto')
+  },
+  { ssr: false }
+)
 import styles from './styles.module.css'
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
