@@ -33,6 +33,13 @@ import styles from './styles.module.css'
 // dynamic imports for optional components
 // -----------------------------------------------------------------------------
 
+const Music = dynamic(
+  () => {
+    return import('./Music')
+  },
+  { ssr: false }
+)
+
 const Twikoo = dynamic(
   () => {
     return import('./Twikoo')
@@ -309,6 +316,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         footer={footer}
       />
       {config.showGithubRibbon && <GitHubShareButton />}
+      <Music />
     </>
   )
 }

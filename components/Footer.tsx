@@ -16,7 +16,6 @@ import { useDarkMode } from '@/lib/use-dark-mode'
 
 // custom
 import Hitokoto from './Hitokoto'
-import Music from './Music'
 import styles from './styles.module.css'
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
@@ -43,7 +42,6 @@ export const FooterImpl: React.FC = () => {
         <div className={styles.copyright}>
           Copyright 2022 <mark>{config.author}</mark>
         </div>
-
         <div className={styles.settings}>
           {hasMounted && (
             <a
@@ -57,7 +55,6 @@ export const FooterImpl: React.FC = () => {
             </a>
           )}
         </div>
-
         <div className={styles.social}>
           {config.twitter && (
             <a
@@ -156,7 +153,6 @@ export const FooterImpl: React.FC = () => {
         <div className={styles.hitokoto}>
           <Hitokoto />
         </div>
-        <Music />
       </footer>
     </>
   )

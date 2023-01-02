@@ -1,34 +1,16 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 // id config option
 // convert component
 const Music = () => {
-  useEffect(() => {
-    const anchor = document.getElementById('twm')
-    // aplayer
-    const aplayerScript = document.createElement('script')
-    aplayerScript.setAttribute(
-      'src',
-      'https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js'
-    )
-    aplayerScript.setAttribute('defer', true)
-    anchor.appendChild(aplayerScript)
+  return (
+    <div>
+      <link
+        rel='stylesheet'
+        type='text/css'
+        href='https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css'
+      />
 
-    // metingjs
-    const metingjsScript = document.createElement('script')
-    metingjsScript.setAttribute(
-      'src',
-      'https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js'
-    )
-    metingjsScript.setAttribute('defer', true)
-    anchor.appendChild(metingjsScript)
-    return () => {
-      anchor.innerHTML = ''
-    }
-  })
-  const twm = (
-    <>
-      <div id='twm'></div>
       <meting-js
         id='2916766519' // wip to option
         server='netease'
@@ -40,11 +22,9 @@ const Music = () => {
         mutex='true'
         lrc-type='0'
         list-olded='true'
-      ></meting-js>
-    </>
+      />
+    </div>
   )
-
-  return twm
 }
 
 export default Music
