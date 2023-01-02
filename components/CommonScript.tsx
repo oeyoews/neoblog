@@ -6,6 +6,11 @@ import React from 'react'
 const CommonScript = () => {
   return (
     <>
+      {/* tido */}
+      <script
+        src='https://code.tidio.co/4wfemkcvx76wrofc8n1rpz8pxqrihxae.js'
+        async
+      ></script>
       {/* twm */}
       <script
         async
