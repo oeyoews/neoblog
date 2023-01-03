@@ -99,7 +99,7 @@
 
 .tk-avatar.tk-has-avatar {
   /* background-color: rgba(144,147,153,0.13); */
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 /* 夜间模式配色，具体比照上方默认模式class */
