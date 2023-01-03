@@ -212,3 +212,8 @@
     filter: none;
   }
 }
+
+/* custom */
+.tk-footer {
+  display: none;
+}

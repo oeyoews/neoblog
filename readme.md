@@ -3,6 +3,8 @@
 ## TODO
 
 - [ ] https://akilar.top/
+- [ ] https://kmar.top/comments/#post-comment
+- [ ] https://kmar.top/posts/94a0f26f/ add pwa
 - [ ] dynamic nextjs question
 - [ ] https://stackoverflow.com/questions/40987309/react-display-loading-screen-while-dom-is-rendering
 - [ ] use discuss comments
