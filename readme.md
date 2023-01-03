@@ -1,5 +1,9 @@
 ## Neoblog
 
+## Status
+
+[![Build](https://github.com/oeyoews/neoblog/actions/workflows/build.yml/badge.svg)](https://github.com/oeyoews/neoblog/actions/workflows/build.yml)
+
 ## TODO
 
 - [ ] https://akilar.top/
