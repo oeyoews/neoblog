@@ -15,13 +15,14 @@ import { SiNotion } from 'react-icons/si'
 import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
+import styles from './styles.module.css'
+
 const Hitokoto = dynamic(
   () => {
     return import('./Hitokoto')
   },
   { ssr: false }
 )
-import styles from './styles.module.css'
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
 
@@ -155,9 +156,7 @@ export const FooterImpl: React.FC = () => {
             </a>
           )}
         </div>
-        <div className={styles.hitokoto}>
-          <Hitokoto />
-        </div>
+        <div className={styles.hitokoto}>{!config.isDev && <Hitokoto />}</div>
       </footer>
     </>
   )
