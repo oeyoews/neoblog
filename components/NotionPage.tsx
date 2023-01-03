@@ -208,21 +208,22 @@ export const NotionPage: React.FC<types.PageProps> = ({
   // NOTE: dont add div for comments
   if (isBlogPost) {
     // fragment <> </>
-    comments = (
-      // <ReactUtterances
-      //   repo='oeyoews/comments' // WIP to convert option
-      //   issueMap='issue-term'
-      //   issueTerm='title'
-      //   theme={isDarkMode ? 'photon-dark' : 'github-light'}
-      // />
-      // why use classnames
-      // <div className={styles.ending} > 😀  Ending line </div>
-      // toc jump repeat effect for confetti
-      // add confit for confetti enable or not
-      <>
-        <Twikoo />
-      </>
-    )
+    if (!config.isDev)
+      comments = (
+        // <ReactUtterances
+        //   repo='oeyoews/comments' // WIP to convert option
+        //   issueMap='issue-term'
+        //   issueTerm='title'
+        //   theme={isDarkMode ? 'photon-dark' : 'github-light'}
+        // />
+        // why use classnames
+        // <div className={styles.ending} > 😀  Ending line </div>
+        // toc jump repeat effect for confetti
+        // add confit for confetti enable or not
+        <>
+          <Twikoo />
+        </>
+      )
   } else {
     comments = <ConfettiComponent /> // have a bug: document is not defined
   }

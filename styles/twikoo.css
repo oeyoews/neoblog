@@ -93,6 +93,15 @@
   margin-top: 10px;
 }
 
+.tk-avatar .tk-avatar-img {
+  border-radius: 50%;
+}
+
+.tk-avatar.tk-has-avatar {
+  /* background-color: rgba(144,147,153,0.13); */
+  background-color: transparent;
+}
+
 /* 夜间模式配色，具体比照上方默认模式class */
 [data-theme='dark'] .tk-content {
   background: #000;
