@@ -17,7 +17,7 @@ import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
 
-function CurrentYear() {
+const CurrentYear = () => {
   const currentYear = new Date().getFullYear()
   return (
     <>
@@ -25,6 +25,7 @@ function CurrentYear() {
     </>
   )
 }
+
 const Hitokoto = dynamic(
   () => {
     return import('./Hitokoto')
