@@ -29,10 +29,6 @@ import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
 import styles from './styles.module.css'
 
-// -----------------------------------------------------------------------------
-// dynamic imports for optional components
-// -----------------------------------------------------------------------------
-
 const propertySelectValue = (
   { schema, value, key, pageHeader },
   defaultFn: () => React.ReactNode
@@ -63,6 +59,10 @@ const Twikoo = dynamic(
   },
   { ssr: false }
 )
+
+// -----------------------------------------------------------------------------
+// dynamic imports for optional components
+// -----------------------------------------------------------------------------
 
 const Code = dynamic(() =>
   import('react-notion-x/build/third-party/code').then(async (m) => {
