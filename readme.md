@@ -6,6 +6,7 @@
 
 ## TODO
 
+- [ ] next/link not working???
 - [ ] https://akilar.top/
 - [x] https://github.com/transitive-bullshit/nextjs-notion-starter-kit/commit/57e864aba663cf78f8ecdc35dc630817051bdfee
 - [ ] https://kmar.top/comments/#post-comment
