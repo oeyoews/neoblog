@@ -1,7 +1,7 @@
 import React from 'react'
 
 /**
- * 第三方代码 统计脚本
+ * 第三方代码
  */
 const CommonScript = () => {
   return (

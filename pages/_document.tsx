@@ -19,7 +19,6 @@ export default class MyDocument extends Document {
               href='favicon.png'
             />
             <link rel='manifest' href='/manifest.json' />
-            <CommonScript />
           </Head>
 
           <body>
@@ -66,6 +65,7 @@ export default class MyDocument extends Document {
             <Main />
 
             <NextScript />
+            <CommonScript />
           </body>
         </Html>
       </IconContext.Provider>
