@@ -1,5 +1,15 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "github": {
-    "silent": false
+    "silent": true
+  },
+  "git": {
+    "deploymentEnabled": {
+      "gh-pages": false
+    }
+  },
+  "env": {
+    "TZ": "asia/shanghai"
   }
 }
