@@ -59,6 +59,9 @@ export default class MyDocument extends Document {
     localStorage.setItem(storageKey, JSON.stringify(isDarkMode))
   }
 })();
+
+        // gitter
+        ((window.gitter = {}).chat = {}).options = {room: 'oeyoews/neoblog' };
 `
               }}
             />

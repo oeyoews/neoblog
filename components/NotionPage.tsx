@@ -344,6 +344,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
       />
       {config.showGithubRibbon && <GitHubShareButton />}
       {!config.isDev && <Music />}
+      // {<Music />}
     </>
   )
 }

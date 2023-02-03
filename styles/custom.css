@@ -5,3 +5,37 @@
 .aplayer-body:hover {
   left: 0px !important;
 }
+
+/* gitter */
+.gitter-open-chat-button,
+.gitter-chat-embed {
+  z-index: 9999;
+}
+
+.gitter-open-chat-button {
+  background-color: #5d9ceb;
+  border-radius: 0.5em;
+  padding: 0.4em 0.8em;
+  bottom: 0.4em;
+  right: 1.4em;
+}
+
+.gitter-open-chat-button,
+.gitter-open-chat-button:visited {
+  font-weight: 700;
+  color: black;
+}
+
+.gitter-chat-embed {
+  border: 0;
+}
+
+.gitter-chat-embed:not(.is-collapsed) {
+  left: 6em;
+  bottom: 6em;
+  top: 3em;
+}
+
+.gitter-open-chat-button::before {
+  content: 'Neoblog · ';
+}
