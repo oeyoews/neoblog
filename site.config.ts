@@ -22,7 +22,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'Personal Notion Pages',
-  domain: 'oeyoewl.top', // ?? dont use custom domain, use vercel
+  domain: 'neoblog.oeyoewl.top', // ?? dont use custom domain, use vercel
   author: 'oeyoews',
 
   // open graph metadata (optional)
