@@ -60,8 +60,6 @@ export default class MyDocument extends Document {
   }
 })();
 
-        // gitter
-        ((window.gitter = {}).chat = {}).options = {room: 'oeyoews/neoblog' };
 `
               }}
             />
