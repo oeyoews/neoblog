@@ -165,7 +165,7 @@ export const FooterImpl: React.FC = () => {
             </a>
           )}
         </div>
-        <div className={styles.hitokoto}>{!config.isDev && <Hitokoto />}</div>
+        <Hitokoto />
       </footer>
     </>
   )

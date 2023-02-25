@@ -246,3 +246,7 @@
   padding: 0 3px;
   /* text-align: center; */
 }
+
+.hitokoto:hover {
+  cursor: pointer;
+}
