@@ -22,7 +22,12 @@ const Hitokoto = () => {
     updateHitokoto()
   })
   return (
-    <div id='hitokoto' onClick={updateHitokoto} className={styles.hitokoto}>
+    <div
+      id='hitokoto'
+      title='Next hitokoto'
+      onClick={updateHitokoto}
+      className={styles.hitokoto}
+    >
       {' '}
     </div>
   )
