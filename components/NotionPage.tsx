@@ -347,7 +347,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         footer={footer}
       />
       {config.showGithubRibbon && <GitHubShareButton />}
-      // {!config.isDev && <Music />}
+      {/* !config.isDev && <Music /> */}
     </>
   )
 }
