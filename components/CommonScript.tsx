@@ -14,6 +14,7 @@ const CommonScript = () => {
         // ></script>
       }
       {/* music */}
+      /*{' '}
       <script
         async
         src='https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js'
@@ -21,7 +22,8 @@ const CommonScript = () => {
       <script
         async
         src='https://cdn.jsdelivr.net/gh/oeyoews/MetingJS@master/source/Meting.js'
-      />
+      />{' '}
+      */
     </>
   )
 }

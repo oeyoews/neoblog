@@ -6,7 +6,12 @@ import { useRouter } from 'next/router'
 
 import cs from 'classnames'
 import { PageBlock } from 'notion-types'
-import { formatDate, getBlockTitle, getPageProperty, normalizeTitle } from 'notion-utils'
+import {
+  formatDate,
+  getBlockTitle,
+  getPageProperty,
+  normalizeTitle
+} from 'notion-utils'
 import BodyClassName from 'react-body-classname'
 import { NotionRenderer } from 'react-notion-x'
 import TweetEmbed from 'react-tweet-embed'
@@ -19,7 +24,7 @@ import { getCanonicalPageUrl, mapPageUrl } from '@/lib/map-page-url'
 import { searchNotion } from '@/lib/search-notion'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
-import ConfettiComponent from './Confetti'
+// import ConfettiComponent from './Confetti'
 import { Footer } from './Footer'
 import { GitHubShareButton } from './GitHubShareButton'
 import { Loading } from './Loading'
@@ -245,7 +250,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         </>
       )
   } else {
-    comments = <ConfettiComponent /> // have a bug: document is not defined
+    // comments = <ConfettiComponent /> // have a bug: document is not defined
   }
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
@@ -293,8 +298,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const socialImage = mapImageUrl(
     getPageProperty<string>('Social Image', block, recordMap) ||
-    (block as PageBlock).format?.page_cover ||
-    config.defaultPageCover,
+      (block as PageBlock).format?.page_cover ||
+      config.defaultPageCover,
     block
   )
 
@@ -319,7 +324,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
           styles.notion,
           pageId === site.rootNotionPageId && 'index-page',
           tagsPage && 'tags-page'
-
         )}
         darkMode={isDarkMode}
         components={components}
@@ -343,7 +347,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         footer={footer}
       />
       {config.showGithubRibbon && <GitHubShareButton />}
-      {!config.isDev && <Music />}
+      // {!config.isDev && <Music />}
     </>
   )
 }
