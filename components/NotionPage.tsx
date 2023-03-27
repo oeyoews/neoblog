@@ -51,12 +51,12 @@ const propertySelectValue = (
   return defaultFn()
 }
 
-const Music = dynamic(
+/* const Music = dynamic(
   () => {
     return import('./Music')
   },
   { ssr: false }
-)
+) */
 
 const Twikoo = dynamic(
   () => {
