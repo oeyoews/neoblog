@@ -318,7 +318,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         pageTitle={tagsPage && propertyToFilterName ? title : undefined}
         footer={footer}
       />
-      {config.showGithubRibbon && <GitHubShareButton />}
+      {/* config.showGithubRibbon && <GitHubShareButton /> */}
       {/* !config.isDev && <Music /> */}
     </>
   )

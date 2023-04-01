@@ -14,6 +14,7 @@ export default siteConfig({
   // shared button (optional)
   repoLink: null,
 
+  // maybe should use local dotenv or env on vercel
   // the site's root Notion page (required)
   rootNotionPageId: '2e6d4459ab59423591394e8a6a72ce35',
   // if you want to restrict pages to a single notion workspace (optional)
