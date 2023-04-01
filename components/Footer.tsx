@@ -17,6 +17,8 @@ import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
 
+{
+  /*
 const CurrentYear = () => {
   const currentYear = new Date().getFullYear()
   return (
@@ -24,6 +26,8 @@ const CurrentYear = () => {
       {currentYear}-{currentYear + 1}
     </>
   )
+}
+*/
 }
 
 const Hitokoto = dynamic(
@@ -56,7 +60,7 @@ export const FooterImpl: React.FC = () => {
       <footer className={styles.footer}>
         <div className={styles.copyright}>
           {/* maybe have some question https://github.com/transitive-bullshit/nextjs-notion-starter-kit/pull/432 */}
-          Copyright {<CurrentYear />} {config.author}
+          Copyright {config.author}
         </div>
         <div className={styles.settings}>
           {hasMounted && (
