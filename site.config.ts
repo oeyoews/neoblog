@@ -10,7 +10,7 @@ export default siteConfig({
   // WIP
   showPageAsideSocials: false, // https://github.com/frankcbliu/awesome-nextjs-notion-blog/blob/main/components/NotionPage.tsx
   // right top button (optional)
-  showGithubRibbon: true,
+  showGithubRibbon: false,
   // shared button (optional)
   repoLink: null,
 
