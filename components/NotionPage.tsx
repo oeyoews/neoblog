@@ -60,13 +60,6 @@ const propertySelectValue = (
   { ssr: false }
 ) */
 
-const Twikoo = dynamic(
-  () => {
-    return import('./Twikoo')
-  },
-  { ssr: false }
-)
-
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
 // -----------------------------------------------------------------------------
@@ -232,29 +225,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const isBlogPost =
     block?.type === 'page' && block?.parent_table === 'collection'
 
-  let comments = null
-  // NOTE: dont add div for comments
-  if (isBlogPost) {
-    // fragment <> </>
-    if (!config.isDev)
-      comments = (
-        // <ReactUtterances
-        //   repo='oeyoews/comments' // WIP to convert option
-        //   issueMap='issue-term'
-        //   issueTerm='title'
-        //   theme={isDarkMode ? 'photon-dark' : 'github-light'}
-        // />
-        // why use classnames
-        // <div className={styles.ending} > 😀  Ending line </div>
-        // toc jump repeat effect for confetti
-        // add confit for confetti enable or not
-        <>
-          <Twikoo />
-        </>
-      )
-  } else {
-    // comments = <ConfettiComponent /> // have a bug: document is not defined
-  }
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
 
@@ -346,7 +316,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside} // WIP
         pageTitle={tagsPage && propertyToFilterName ? title : undefined}
-        pageFooter={comments}
         footer={footer}
       />
       {config.showGithubRibbon && <GitHubShareButton />}
