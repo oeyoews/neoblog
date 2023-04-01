@@ -6,7 +6,8 @@ import { getPageTweet } from '@/lib/get-page-tweet'
 
 import { PageActions } from './PageActions'
 import { HomeButton } from './PageHomeButton'
-import { PageSocial } from './PageSocial'
+
+// import { PageSocial } from './PageSocial'
 
 export const PageAside: React.FC<{
   block: Block
@@ -33,5 +34,7 @@ export const PageAside: React.FC<{
     return <PageActions tweet={tweet} />
   }
 
-  return <PageSocial />
+  {
+    /*   return <PageSocial /> */
+  }
 }
