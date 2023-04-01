@@ -55,6 +55,7 @@ export const FooterImpl: React.FC = () => {
     <>
       <footer className={styles.footer}>
         <div className={styles.copyright}>
+          {/* maybe have some question https://github.com/transitive-bullshit/nextjs-notion-starter-kit/pull/432 */}
           Copyright {<CurrentYear />} {config.author}
         </div>
         <div className={styles.settings}>
