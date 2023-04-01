@@ -1,6 +1,6 @@
 ## Neoblog
 
-* https://neoblog.oeyoewl.top
+- https://neoblog.oeyoewl.top
 
 ## Status
 
@@ -8,14 +8,14 @@
 
 ## TODO
 
-- [ ] next/link not working???
+- [x] next/link not working???
 - [ ] https://akilar.top/
 - [x] https://github.com/transitive-bullshit/nextjs-notion-starter-kit/commit/57e864aba663cf78f8ecdc35dc630817051bdfee
 - [ ] https://kmar.top/comments/#post-comment
 - [ ] https://kmar.top/posts/94a0f26f/ add pwa
 - [ ] dynamic nextjs question
 - [ ] https://stackoverflow.com/questions/40987309/react-display-loading-screen-while-dom-is-rendering
-- [ ] use discuss comments
+- [x] use discuss comments
 - [ ] support short `ctrl + k` to support
 - [ ] support social author img
 - [ ] add post dir https://github.com/Yeraze/nextjs-notion-starter-kit/blob/main/pages/post/%5BpageId%5D.tsx [ ] https://github.com/Yeraze/nextjs-notion-starter-kit/pull/2/files
