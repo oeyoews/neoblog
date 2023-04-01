@@ -4,7 +4,7 @@ import { IoMoonSharp, IoSunnySharp } from 'react-icons/io5'
 
 // import { FiGithub, FiTwitter } from 'react-icons/fi'
 // import { SiNotion } from 'react-icons/si'
-import * as config from '@/lib/config'
+// import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
