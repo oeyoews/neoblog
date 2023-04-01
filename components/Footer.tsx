@@ -1,5 +1,4 @@
 import * as React from 'react'
-import dynamic from 'next/dynamic'
 
 import {
   FaEnvelopeOpenText,
@@ -30,12 +29,14 @@ const CurrentYear = () => {
 */
 }
 
-const Hitokoto = dynamic(
+{
+  /* const Hitokoto = dynamic(
   () => {
     return import('./Hitokoto')
   },
   { ssr: false }
-)
+) */
+}
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
 
@@ -170,7 +171,7 @@ export const FooterImpl: React.FC = () => {
             </a>
           )}
         </div>
-        <Hitokoto />
+        {/*  <Hitokoto /> */}
       </footer>
     </>
   )
