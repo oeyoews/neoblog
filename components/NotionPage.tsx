@@ -27,7 +27,7 @@ import { useDarkMode } from '@/lib/use-dark-mode'
 
 // import ConfettiComponent from './Confetti'
 import { Footer } from './Footer'
-import { GitHubShareButton } from './GitHubShareButton'
+// import { GitHubShareButton } from './GitHubShareButton'
 import { Loading } from './Loading'
 import { NotionPageHeader } from './NotionPageHeader'
 import { Page404 } from './Page404'
