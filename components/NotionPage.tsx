@@ -19,6 +19,7 @@ import { useSearchParam } from 'react-use'
 
 import * as config from '@/lib/config'
 import * as types from '@/lib/types'
+import PageLink from '@/components/PageLink'
 import { mapImageUrl } from '@/lib/map-image-url'
 import { getCanonicalPageUrl, mapPageUrl } from '@/lib/map-page-url'
 import { searchNotion } from '@/lib/search-notion'
@@ -34,6 +35,7 @@ import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
 import styles from './styles.module.css'
 
+// custom tags
 const propertySelectValue = (
   { schema, value, key, pageHeader },
   defaultFn: () => React.ReactNode
@@ -192,7 +194,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const components = React.useMemo(
     () => ({
       nextImage: Image,
-      nextLink: Link,
+      // nextLink: Link,
+      PageLink,
       Code,
       Collection,
       Equation,
