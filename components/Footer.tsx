@@ -1,9 +1,9 @@
 import * as React from 'react'
 
-import { FiGithub, FiTwitter } from 'react-icons/fi'
 import { IoMoonSharp, IoSunnySharp } from 'react-icons/io5'
-import { SiNotion } from 'react-icons/si'
 
+// import { FiGithub, FiTwitter } from 'react-icons/fi'
+// import { SiNotion } from 'react-icons/si'
 import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
@@ -30,7 +30,7 @@ export const FooterImpl: React.FC = () => {
       <footer className={styles.footer}>
         <div className={styles.copyright}>
           {/* maybe have some question https://github.com/transitive-bullshit/nextjs-notion-starter-kit/pull/432 */}
-          Copyright {config.author}
+          /* Copyright {config.author} */
         </div>
         <div className={styles.settings}>
           {hasMounted && (
@@ -45,7 +45,7 @@ export const FooterImpl: React.FC = () => {
             </a>
           )}
         </div>
-        <div className={styles.social}>
+        {/* <div className={styles.social}>
           {config.twitter && (
             <a
               className={styles.twitter}
@@ -81,8 +81,7 @@ export const FooterImpl: React.FC = () => {
               <SiNotion />
             </a>
           )}
-        </div>
-        {/*  <Hitokoto /> */}
+        </div> */}
       </footer>
     </>
   )
