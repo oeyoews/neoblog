@@ -25,9 +25,7 @@ import { getCanonicalPageUrl, mapPageUrl } from '@/lib/map-page-url'
 import { searchNotion } from '@/lib/search-notion'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
-// import ConfettiComponent from './Confetti'
 import { Footer } from './Footer'
-// import { GitHubShareButton } from './GitHubShareButton'
 import { Loading } from './Loading'
 import { NotionPageHeader } from './NotionPageHeader'
 import { Page404 } from './Page404'
@@ -52,13 +50,6 @@ const propertySelectValue = (
 
   return defaultFn()
 }
-
-/* const Music = dynamic(
-  () => {
-    return import('./Music')
-  },
-  { ssr: false }
-) */
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
@@ -318,8 +309,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
         pageTitle={tagsPage && propertyToFilterName ? title : undefined}
         footer={footer}
       />
-      {/* config.showGithubRibbon && <GitHubShareButton /> */}
-      {/* !config.isDev && <Music /> */}
     </>
   )
 }

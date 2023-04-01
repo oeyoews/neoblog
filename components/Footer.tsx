@@ -1,12 +1,5 @@
 import * as React from 'react'
 
-import {
-  FaEnvelopeOpenText,
-  FaLinkedin,
-  FaMastodon,
-  FaYoutube,
-  FaZhihu
-} from 'react-icons/fa'
 import { FiGithub, FiTwitter } from 'react-icons/fi'
 import { IoMoonSharp, IoSunnySharp } from 'react-icons/io5'
 import { SiNotion } from 'react-icons/si'
@@ -15,30 +8,6 @@ import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
-
-{
-  /*
-const CurrentYear = () => {
-  const currentYear = new Date().getFullYear()
-  return (
-    <>
-      {currentYear}-{currentYear + 1}
-    </>
-  )
-}
-*/
-}
-
-{
-  /* const Hitokoto = dynamic(
-  () => {
-    return import('./Hitokoto')
-  },
-  { ssr: false }
-) */
-}
-
-// TODO: merge the data and icons from PageSocial with the social links in Footer
 
 export const FooterImpl: React.FC = () => {
   const [hasMounted, setHasMounted] = React.useState(false)
@@ -89,29 +58,6 @@ export const FooterImpl: React.FC = () => {
             </a>
           )}
 
-          {config.mastodon && (
-            <a
-              className={styles.mastodon}
-              href={config.mastodon}
-              title={`Mastodon ${config.getMastodonHandle()}`}
-              rel='me'
-            >
-              <FaMastodon />
-            </a>
-          )}
-
-          {config.zhihu && (
-            <a
-              className={styles.zhihu}
-              href={`https://zhihu.com/people/${config.zhihu}`}
-              title={`Zhihu @${config.zhihu}`}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <FaZhihu />
-            </a>
-          )}
-
           {config.github && (
             <a
               className={styles.github}
@@ -124,41 +70,6 @@ export const FooterImpl: React.FC = () => {
             </a>
           )}
 
-          {config.linkedin && (
-            <a
-              className={styles.linkedin}
-              href={`https://www.linkedin.com/in/${config.linkedin}`}
-              title={`LinkedIn ${config.author}`}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <FaLinkedin />
-            </a>
-          )}
-
-          {config.newsletter && (
-            <a
-              className={styles.newsletter}
-              href={`${config.newsletter}`}
-              title={`Newsletter ${config.author}`}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <FaEnvelopeOpenText />
-            </a>
-          )}
-
-          {config.youtube && (
-            <a
-              className={styles.youtube}
-              href={`https://www.youtube.com/${config.youtube}`}
-              title={`YouTube ${config.author}`}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <FaYoutube />
-            </a>
-          )}
           {config.notion && (
             <a
               className={styles.notionPublic}
