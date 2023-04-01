@@ -1,6 +1,7 @@
 import * as React from 'react'
 
-// import { IoMoonSharp, IoSunnySharp } from 'react-icons/io5'
+import { IoMoonSharp, IoSunnySharp } from 'react-icons/io5'
+
 // import { FiGithub, FiTwitter } from 'react-icons/fi'
 // import { SiNotion } from 'react-icons/si'
 // import * as config from '@/lib/config'
@@ -31,7 +32,7 @@ export const FooterImpl: React.FC = () => {
           {/* maybe have some question https://github.com/transitive-bullshit/nextjs-notion-starter-kit/pull/432 */
           /* Copyright {config.author} */}
         </div>
-        {/* <div className={styles.settings}>
+        <div className={styles.settings}>
           {hasMounted && (
             <a
               className={styles.toggleDarkMode}
@@ -43,7 +44,7 @@ export const FooterImpl: React.FC = () => {
               {isDarkMode ? <IoMoonSharp /> : <IoSunnySharp />}
             </a>
           )}
-        </div> */}
+        </div>
         {/* <div className={styles.social}>
           {config.twitter && (
             <a
