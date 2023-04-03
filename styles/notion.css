@@ -399,4 +399,8 @@ notion-frame {
   display: none;
 }
 
+.notion-collection-card-cover span{
+  display: block !important;
+}
+
 /* custom  */
