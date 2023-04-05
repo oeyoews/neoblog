@@ -27,7 +27,7 @@
 - [x] translate readme
 - [x] add switch theme during effect
 - [x] left sidebar
-- [ ] enable redis(how to debug error)
+- [ ] enable redis(how to debug error, this url seem have some question)
 
 ![showcase 1](./images/notion-1.png 'notion-1')
 
