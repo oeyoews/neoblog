@@ -1,6 +1,6 @@
 import * as React from 'react'
 import dynamic from 'next/dynamic'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -43,9 +43,9 @@ const propertySelectValue = (
   if (pageHeader && schema.type === 'multi_select' && value) {
     return (
       <Link href={`/tags/${value}`} key={key}>
-        <a>{defaultFn()}</a>
+        {defaultFn()}
       </Link>
-    )
+    );
   }
 
   return defaultFn()

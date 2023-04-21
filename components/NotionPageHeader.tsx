@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 import * as types from 'notion-types'
 import cs from 'classnames'
@@ -53,11 +53,14 @@ export const HeaderLogo: React.FC<{
         }
         width='100%'
         height='100%'
-        objectFit='contain'
         alt='logo'
-      />
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+          objectFit: "contain"
+        }} />
     </LinkWrapper>
-  )
+  );
 }
 
 const ToggleThemeButton = () => {
