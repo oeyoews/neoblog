@@ -3,10 +3,5 @@
   "trailingSlash": false,
   "github": {
     "silent": true
-  },
-  "git": {
-    "deploymentEnabled": {
-      "gh-pages": false
-    }
   }
 }
