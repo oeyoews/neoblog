@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import Image from 'next/legacy/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+
 import 'prismjs/components/prism-markup-templating.js'
 import 'prismjs/components/prism-markup-templating.js'
 import 'prismjs/components/prism-markup.js'
